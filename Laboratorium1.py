@@ -1,6 +1,6 @@
-### Zapoznaj się z prostymi typami zmiennych
+# ### Zapoznaj się z prostymi typami zmiennych
 # print('Hello kognitywistyka') # funkcja (dalej jako fun) print wyświetla wynik na ekranie
-#
+
 ## nazwa zmiennej powinna mieć znaczenie, staraj się nie używać pojedyńczych liter a,b,c, lub liter+numer  x1,x2,x3
 ## kod w j.polskim lub angielskim, mix w/w jest możliwy ale nieprofesjonalny
 ## Konwencja w zapisie nazw zmiennych: snake vs camel  wybierz 1 z nich
@@ -17,11 +17,11 @@ Snake Case: user_login_count
 # num1 = 2  # zmienna a ma typ integer (liczba całkowita)
 # num2 = 7.345134   # zmienna b typ float (liczba zmiennoprzecinkowa)
 # num3 = num1 + num2
-# # pot_num2_num3 = num2 ** num3  # ** to operator potęgowania  num2^num3
-# # print(num1)
-# # print(num2)
-# print(num3)
-# # print(num4)
+# pot_num2_num3 = num2 ** num3  # ** to operator potęgowania  num2^num3
+# print(num1,'+',num2,'=',num3)
+# print(num1,'^',num2,'=',pot_num2_num3)
+# # print(num3)
+# # # print(num4)
 # print(type(num2)) # fun type sprawdza typ zmiennej
 
 # print("#####################")
@@ -35,15 +35,15 @@ Snake Case: user_login_count
 # Y = '2'
 # print("Zmienna X ma typ: ",type(X))
 # print("Zmienna Y ma typ: ",type(Y))
-# print(z,"ma kotów: ",str(X))
-# print(z,"ma kotów: ",Y)
-# print(X+Y)
+
+# # print(X+Y)
+# print(X+int(Y))
 
 ### Komunikacja/interakcja z użytkownikiem
 ### Wpisz w konsoli liczby, zwróć uwagę na różnice między zmienną numeryczną i łańcuchową 
 # zm1 = input("Podaj zmienną x =") # fun input służy do wprowadzania wartości przez uzytkownika w konsoli
-# zm2 = input("Podaj zmienną y =") # wynik funkcji (argument wyjściowy funkcji) input ma typ string
-# zm3_string = zm1 + zm2  # konwersję zmiennej string na  float
+# zm2 = int(input("Podaj zmienną y =")) # wynik funkcji (argument wyjściowy funkcji) input ma typ string
+# zm3_string = int(zm1) + zm2  # konwersję zmiennej string na  float
 # print(zm3_string)
 
 # zm1 = input("Podaj zmienną x =") # fun imput służy do wprowadzania wartości przez uzytkownika w konsoli
@@ -66,11 +66,49 @@ Snake Case: user_login_count
 
 ##############Zadania do wykonania, Twoje pierwsze algorytmy
 # 1. Wykonaj odejmowanie, mnożenie i dzielenie 2 dowolnych liczb
+# zm1 = input("Podaj zmienną x =")
+# zm2 = input("Podaj zmienną y =")
+# wynik_mnozenie=float(zm1) * float(zm2)
+# print('Wynik mnozenia', wynik_mnozenia)
+# zm1 = input("Podaj zmienną x =")
+# zm2 = input("Podaj zmienną y =")
+# wynik_dzielenie = float(zm1) * float(zm2)
+# print('wynik dzielenia', wynik_dielenia)
+
+
+
+
 # 2. Oblicz wyrażenie 2x+5y   gdzie: x,y to dowolne dwie liczby które podaje użytkownik (w konsoli)
+
+# x = float (input("Podaj zmienną x ="))
+# y = float (input("Podaj zmienną y ="))
+# wynik_dz = 2*x+5*y
+# print('Wynik', wynik_dz)
+
+
 # 3. Popraw zmienną zdanie tak aby wyświetlany był napis: "Ala ma kota"
+# z = 'Ala '
+# x = "ma "
+# y = "kota."
+# zdanie = z + x + y
+# print(zdanie)
+
+
+
 # 4. Wyświetl zdanie "Jestem a b mam c lat studiuję d",
 #  gdzie : a-imie, a-nazwisko, c-liczba, d-kierunek studiów są dowolne zmienne które podaje użytkownik (wczytywane z klawiatury)
+# imie = input("Podaj imie: ")
+# nazwisko = input("Podaj nazwisko: ")
+# wiek = input("Podaj wiek: ")
+# kierunek = input("Podaj kierunek: ")
+# print('Jestem', imie, nazwisko, 'mam', wiek, 'lat', 'studiuje', kierunek)
+
+
+
 # 5. Sprawdź/porównaj czy 1+2+10+20000001+4+347586970885 jest równa 321784560456434534646
+# print
+
+
 # 6. Sprawdź czy suma dowolnych dwóch liczb podanych przez użytkownika jest liczbą parzystą czy nieparzystą wyświetl właściwy komunikat
 # 7. Utwórz prosty kalkulator dla 2 zmiennych podanych przez użytkownika, który obliczy: sumę, różnicę,
 # iloczyn, iloraz, potęgę tych liczb, nie zapomnij o stosownych komentarzach informacyjnych dla użytkownika.

@@ -213,3 +213,4 @@
 #Zadanie 8
 # Napisz program, ktory dla dowolnej liczby x podanej przez użytkownika
 # czy jest to liczba (a) parzysta, (b) nieparzysta, (c) całkowita.
+#uzyc modulo % , liczyc reszt ez dzielenia/ liczba%2
